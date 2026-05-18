@@ -1,0 +1,55 @@
+---
+title: "first_package"
+author: "Egor Smirnov"
+format: html
+---
+
+# Shared Properties
+
+## Libraries
+
+```{r libraries}
+library(devtools)
+```
+
+## Checks
+
+```{r check}
+has_devel()
+```
+
+```{r version}
+packageVersion("usethis")
+```
+
+```{r git}
+git_sitrep()
+```
+
+```{r vaccinate_true}
+#it sets vaccinated to true,
+#git_vaccinate()
+```
+
+```{r configure_main}
+#it sets default initial branch to main
+#git_default_branch_configure()
+```
+
+```{r token_create}
+#it automatically moves you to the page to create a token
+#create_github_token()
+```
+
+```{r token_set}
+#it allows you to paste your new token
+#gitcreds::gitcreds_set()
+```
+
+## Create Package
+
+```{r}
+create_package("~/Desktop/animalsounds")
+```
+
+
