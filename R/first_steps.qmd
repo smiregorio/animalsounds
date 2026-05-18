@@ -10,6 +10,7 @@ format: html
 
 ```{r libraries}
 library(devtools)
+library(usethis)
 ```
 
 ## Checks
@@ -52,4 +53,27 @@ git_sitrep()
 create_package("~/Desktop/animalsounds")
 ```
 
+## Git
+
+```{r}
+use_git()
+```
+
+```{r}
+use_github()
+```
+
+```{r}
+use_r("animal_sounds")
+```
+
+# First Steps
+
+`Shift+Cmd+L`: activates `devtools::load_all(".")`. It allows to run packages as if it's in memory.
+
+## Install
+
+```{r install}
+devtools::install()
+```
 
