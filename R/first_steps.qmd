@@ -67,7 +67,7 @@ use_github()
 use_r("animal_sounds")
 ```
 
-# First Steps
+# First day
 
 `Shift+Cmd+L`: activates `devtools::load_all(".")`. It allows to run packages as if it's in memory.
 
@@ -77,3 +77,29 @@ use_r("animal_sounds")
 devtools::install()
 ```
 
+
+## Licenses
+
+open source: mit
+
+gpl license: anything else that uses gpl should also use gpl
+
+# Second day
+
+```{r}
+packageVersion("roxygen2")
+```
+
+`#'` is a roxygen comment.
+
+`@param arg` is a roxygen tag (takes an argument, describes inputs). Common tags: `@examples` (shows how the function works), `@return` (describes the return value), `@export` (if the function should be user-visible).
+
+Comments should start with a description block: Title (up to 65 characters), Description (few lines), Details.
+
+RStudio allows to put automatically the roxygen comment: option+shift+cmd+R
+
+You must have loaded the package with `load_all()` at least once.
+
+Redular workflow: 1) update R comment, 2) update `.Rd` files, 3) preview `.html`, 4) continue.
+
+A namespace splits functions into two classes: internal, external (must be documented, changing could break other people's code).
